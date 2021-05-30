@@ -1,0 +1,150 @@
+:root { /* Seudo selectores, es una manera de almacenar variables de css*/
+
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --amarillo: #ffc107;
+    --fucsiacorp: #d2248b;
+    --azulcorp: #2a4f9c;
+    --clarocorp: #acb4cc;
+    --gris:#757575;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    background-image: url(../img/videob2.png); /*Defino un fondo para la página*/
+    color: var(--clarocorp); /* Color de texto en toda la página */
+    background-attachment: fixed; /*fijamos el fondo de pantalla*/
+    background-size: cover;
+
+    box-sizing: border-box;/* Para eliminar la afectación de los paddind*/
+
+}
+
+
+*, *:before, *:after{  /* con el asterisco toma todos los elementos del html y les aplica el box-sizing: boder-box que viene heredado; */
+    box-sizing: inherit; /* con lo anterior mas esto, el padding no va a afectar el tamaño del elemento */
+}
+
+body {
+    font-size: 16px;/* 1rem = 10px estamos definiendo el ancho del h1*/
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h3{
+    color: var(--blanco);
+}
+
+h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
+    text-align: center;
+}
+
+.titulo  {
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--fucsiacorp);
+}
+
+.titulo span{
+    font-size: 2rem;
+    color: var(--azulcorp);
+}
+
+.contenedor{
+    /*width: 120rem; forzo a que tome siempre los 1200px, independiente al tamaño de la pantalla*/
+    max-width: 120rem; /*Toma máximo 1200px si los hay disponibles*/
+    
+ /*   margin-top: 0; Agrega margen desde el contenedor hacia el primer elemento superior 
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+*/
+    margin: 0 auto 0 auto; /* Esta línea reemplaza las 4 superiores */
+
+}
+
+
+.nav-bg{ /* Aquí manipulamos el fondo del menú */
+    background-color: var(--clarocorp);
+
+}
+
+.navegacion-principal{ /* Propiedades de la navegación principañ */
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion-principal a{ /* Propiedades directas a los enlaces */
+    display: block; /*Toman todo el espacio*/
+    text-align: center; /*Centra los textos del menú*/
+
+    color: var(--fucsiacorp); /* Cambia el color al enlace por default */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 2rem;
+    font-weight: bold;
+    
+    padding: 1rem; /*Margen de afuera hacia dentro de los extremos del elemento */
+
+}
+
+.navegacion-principal a:hover{ /* Para cuando el mouse se para encima del enlace, el efecto */
+    background-color: var(--azulcorp); /*Color de fondo del enlace*/
+    color: var(--clarocorp); /* Color de texto */
+
+}
+
+/* Vamos a usar MediaQueries para adaptar el diseño de la web a cualquier dispositivo */
+
+@media( min-width: 480px ){ /*Comportamiento cuando la pantalla es de 480 o inferior*/
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between; /* Distribuye el contenido horizontalmente en este caso esta clase es el padre de los enlaces, y los distribuye */
+
+    }
+
+}
+
+.hero{
+    /*   background-image: url(../img/videoblocks.png);
+       background-repeat: none; para que no se repita la imagen */
+       height: 220px;
+       /*padding: 20px; /*margen del contenido de mi elemento hacia los bordes*/
+       position: relative; /*el padre debe tomar posición relativa para que el hijo tenga posiciòn absoluta*/
+   }
+   
+.contenido-hero{
+       position: absolute;
+        width: 100%;
+        height: 100%;
+        /* Con las 2 líneas anteriores, defino que el contenido-hero ocupe todo el espacio del padre, de los contrario solo ocuparìa el espacio de sus elementos*/
+       
+       display: flex; /* Coloca el contenido de izq->der*/
+       flex-direction: column; /*Hace que se vea de arriba->abajo*/
+       align-items: center; /*Cuando se usa la sentencia anterior se alinea horizontalmente con align-items*/
+       justify-content: left; /*Y se alinea verticalmente con justify-content */
+}
+
+.recarga{
+    display: flex;
+    align-items: flex-end;
+}   
+
+
+
+ /* Defino un color oscuro para el fondo con degradé*/  
+.capitulo{
+    position: relative; /*el padre debe tomar posición relativa para que el hijo tenga posiciòn absoluta*/
+
+}
+.capitulo-body{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 80%);
+}
+
+/* creado por jhsg se define las dimensiones del logo en el menú*/
+.logo{
+    width: 7rem;
+    height: 2.9rem;
+}
