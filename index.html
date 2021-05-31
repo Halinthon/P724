@@ -19,7 +19,7 @@
 
 </head>
 <body class="capitulo-body"> 
-    <header><h1 class="titulo">RED724 <span>Su RED preferida</span></h1></header>
+    <!--<header><h1 class="titulo">RED724 <span>Su RED preferida</span></h1></header>-->
 
     <div class="nav-bg"> <!--Clase de utilidad para extender el fondo del menú se extiende por todo el menú-->
         <nav class="navegacion-principal contenedor">
@@ -37,11 +37,8 @@
         
 
             <div class="recarga">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wallet" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
-                    <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
-                </svg> <!-- La imagen viene de la pàgina de tabler icons con la etiquete SVG se agregan las imagenes desde la web-->
+                <img src="img/RED724.png" alt="" class="logo2">
+                
                 <p>Colombia</p>
             </div>
             <a class="boton" href="#">¡Mis Transacciones!</a>
@@ -50,8 +47,10 @@
     </section>
    
     <main class="areaprincipal">
+        <!--se cometan los servicios 
         <h2>Nuestros Servicios</h2>
 
+        
         <div class="servicios">
             <section class="servicios2">
                 <h3>Recargas</h3>
@@ -110,48 +109,48 @@
                     libero, non imperdiet mi rhoncus a. Donec urna felis, dignissim mollis rutrum quis, pellentesque id justo. 
                 </p>
             </section>
-        </div> <!-- Este es el cierre de la clase de servicios-->
-    </main>
+        </div> -->
+        <!-- Este es el cierre de la clase de servicios-->
        
-
-
-    
-
     <section>
-        <h2 class="titulo2">¡Quiero mi Servicio con 724!</h2>
-        <form>
+        <h2 class="titulo2">¡Quiero mi Servicio con RED724!</h2>
+        <form class="formulario">
 
         <fieldset>
             <!--Con los divs, puedo hacer que estèn uno encima del otro-->
-            <legend>Quiero pertenecer a RED724!</legend>
-            <div>
-                <label>Nombre</label>
-                <input type="text" placeholder="Nombre completo">
-            </div>
+            <legend>Mis datos son...</legend>
             
-            <div>
-                <label>E-mail</label>
-                <input type="email" placeholder="Correo electrónico">
-            </div>
-            
-            <div>
-                <label>Teléfono</label>
-                <input type="text" placeholder="Movil o fijo">
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre completo">
+                </div>
+                
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Correo electrónico">
+                </div>
+                
+                <div class="campo">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="Movil o fijo">
+                </div>
+
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </div>
             </div>
 
-            <div>
-                <label>Mensaje</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-
-            <div>
-                <input type="submit" value="Registrarme!"> <!-- Vd 13-->
-            </div> 
+                <div>
+                    <input type="submit" value="Registrarme!"> <!-- Vd 13-->
+                </div> 
 
         </fieldset>
 
         </form>
     </section>
+</main>
 
     <footer>
         <p>Todos los derechos reservados por RED724</p>

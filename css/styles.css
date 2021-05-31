@@ -6,7 +6,7 @@
     --fucsiacorp: #d2248b;
     --azulcorp: #2a4f9c;
     --clarocorp: #acb4cc;
-    --gris:#757575;
+    --gris:#7575754d;
 }
 
 
@@ -30,7 +30,6 @@ html {
 body {
     font-size: 16px;/* 1rem = 10px estamos definiendo el ancho del h1*/
     font-family: 'Nunito', sans-serif;
-
 }
 
 /*Se define el estilo del botón*/
@@ -169,6 +168,15 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
     align-items: center;
 }
 
+.servicios2 h3{
+    color: var(--fucsiacorp);
+    font-weight: bold; /*negrita*/
+}
+
+.servicios2 p{
+    line-height: 1.5; /*interlineado*/
+}
+
 .servicios2 .iconos{
     height: 15rem;
     width: 15rem;
@@ -182,22 +190,51 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
 .areaprincipal{
    /* align-items: center;*/
     text-align: center; /*Centro los textos del contenedor main */
+    
 }
 
  /* Defino un color oscuro para el fondo con degradé*/  
 .capitulo{
     position: relative; /*el padre debe tomar posición relativa para que el hijo tenga posiciòn absoluta*/
-
+    
 }
 .capitulo-body{
     position: absolute;
     background-color: rgba(0, 0, 0, 80%);
+    width: 100%;
+}
+
+/* Formulario */
+.formulario{
+    background-color: var(--gris);
+    width: min( 60rem, 100%); /* toma el valor mas pequeño para el ancho del formulario*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 /* creado por jhsg se define las dimensiones del logo en el menú*/
 .logo{
     width: 7rem;
     height: 2.9rem;
+}
+
+.logo2{
+    width: 20rem;
+    height: 7rem;
 }
 
 .titulo2{
