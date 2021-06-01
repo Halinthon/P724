@@ -269,6 +269,7 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
     }   
 }
 
+
 .campo:nth-child(3),
 .campo:nth-child(4){
     grid-column: 1/3;
@@ -279,7 +280,7 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
 }
 
 .campo label{
-    color: rgb(122, 42, 88);
+    color: rgb(14, 12, 13);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
@@ -290,4 +291,9 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
     border: none;
     padding: .5rem;
     border-radius: .5rem;
+}
+
+.contenedor-campos .chequeo{
+    text-decoration: none;
+    color: rgb(65, 53, 53);
 }
