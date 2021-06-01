@@ -13,7 +13,7 @@
 
 html {
     font-size: 62.5%;
-    background-image: url(../img/videob2.png); /*Defino un fondo para la página*/
+    background-image: url(../img/pagos-digitales.jpg); /*Defino un fondo para la página*/
     color: var(--clarocorp); /* Color de texto en toda la página */
     background-attachment: fixed; /*fijamos el fondo de pantalla*/
     background-size: cover;
@@ -255,7 +255,7 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
         text-align: left;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto 20rem;
+        grid-template-rows: auto auto 10rem;
         column-gap: 1rem;
     }   
 }
