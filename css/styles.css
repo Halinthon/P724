@@ -153,15 +153,19 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
 }
 
 .hero h2{
-    color:white;
+    color:rgb(218, 217, 223);
+    
+    /*font-family: 'Odibee Sans', cursive;*/
+    font-size: 40px;  /* incremento de tamaño de la fuente lìnea junio 1*/
+    text-align: left;
+    margin-top: 2rem; /* margen junio 1 */
+    text-align: center;
 }
+
 .recarga{
     display: flex;
     align-items: flex-end;
 }   
-
-
-
 
 @media (min-width: 768px){
 .servicios{
@@ -250,7 +254,9 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
 }
 
 .titulo2{
+    padding: 1rem; /*junio 1*/
     color: white;
+    margin-top: 12rem; /*junio 1*/
 }
 
 @media (min-width: 768px){
@@ -271,6 +277,7 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
 .campo{
     /*margin-bottom: 0.5rem;*/
 }
+
 .campo label{
     color: rgb(175, 49, 118);
     font-weight: bold;
