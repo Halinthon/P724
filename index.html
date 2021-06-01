@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="capitulo">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,8 @@
     <!-- Agrego el archivo css que me manejará los estilos-->
     <link rel="preload" href="css/styles.css" as="style"> <!--Cargue lo mas rápido que pueda la hoja de estilos-->
     <link rel="stylesheet" href="css/styles.css"> <!-- Relaciono y vinculo la hoja de estilos-->
-
+    <link rel="icon" type="image/png" href="img/logomini1.png">
+    <link rel="stylesheet" href="css/estilos2.css">
 
 </head>
 <body class="capitulo-body"> 
@@ -33,7 +35,7 @@
         
         <div class="contenido-hero">
 
-            <h2>¡Los Sistemas de Pago Evolucionan, Nosotros tambien!</h2>
+            <h2>¿Quieres saber porque somos el mejor procesador de Pagos?</h2>
         
 
             <div class="recarga">
@@ -41,7 +43,22 @@
                 
                 <p>Colombia</p>
             </div>
-            <a class="boton" href="#">¡Mis Transacciones!</a>
+            <a class="btn-open-popup" href="#modal">¡CONOCENOS!</a>
+
+            <div class="container-all" id="modal">
+        
+                <div class="popup">
+                    <div class="img"></div>
+                    <div class="container-text">
+                        <h1>¿Alguna vez te preguntaste si pagar puede ser mas secillo?</h1>
+                        <p>RED724, es una marca joven, innovadora, que cree en la sencillez y en las maneras mas faciles de procesar pagos!</p>
+                        <p>Estamos convencidos de que venimos a ser Disrutivos! Atrevidos! Agresivos! pero sobre todo... Amigables con la banca y la manera de hacer procesamiento de pagos!</p>
+                    </div>
+                    
+                    <a href="#" class="btn-close-popup">X</a>
+                </div>
+                
+            </div>
         </div>
 
     </section>
@@ -118,7 +135,7 @@
 
         <fieldset>
             <!--Con los divs, puedo hacer que estèn uno encima del otro-->
-            <legend>¡Si quieres ser pionero, ingresa tus datos!</legend>
+            <legend>¡Si quieres ser parte, ingresa tus datos!</legend>
             
             <div class="contenedor-campos">
                 <div class="campo">
@@ -143,7 +160,7 @@
             </div>
 
                 <div>
-                    <input class="boton" type="submit" value="Registrarme!"> <!-- Vd 13-->
+                    <input class="boton" type="submit" value="Enviar!"> <!-- Vd 13-->
                 </div> 
 
         </fieldset>
