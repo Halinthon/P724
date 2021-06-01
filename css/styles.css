@@ -14,7 +14,7 @@
 html {
     font-size: 62.5%;
     background-image: url(../img/dataf6.jpeg); /*Defino un fondo para la página*/
-    color: var(--clarocorp); /* Color de texto en toda la página */
+    color: black; /* Color de texto en toda la página */
     background-attachment: fixed; /*fijamos el fondo de pantalla*/
     background-size: cover;
 
@@ -152,6 +152,9 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
        justify-content: left; /*Y se alinea verticalmente con justify-content */
 }
 
+.hero h2{
+    color:white;
+}
 .recarga{
     display: flex;
     align-items: flex-end;
@@ -207,7 +210,7 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
 }
 .capitulo-body{
     position: absolute;
-    background-color: rgba(0, 0, 0, 30%);
+    background-color: rgba(0, 0, 0, 25%);
     width: 100%; /* Amplio el ancho del body JHSG mayo 31*/
     /*height: 100%;*/
     padding: 15px;
@@ -247,7 +250,7 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
 }
 
 .titulo2{
-    color: var(--fucsiacorp);
+    color: white;
 }
 
 @media (min-width: 768px){
@@ -269,7 +272,7 @@ h2, h3{ /*Estoy centrando todos los h2 y h3 de la web*/
     /*margin-bottom: 0.5rem;*/
 }
 .campo label{
-    color: rgb(107, 107, 241);
+    color: rgb(175, 49, 118);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
